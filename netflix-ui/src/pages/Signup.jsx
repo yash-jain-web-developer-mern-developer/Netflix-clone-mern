@@ -21,7 +21,7 @@ function Signup() {
       const { email, password } = formValues;
       await createUserWithEmailAndPassword(firebaseAuth, email, password);
     } catch (error) {
-      alert("password length must be more than 6 character")
+      alert(error)
       console.log(error);
     }
   };
