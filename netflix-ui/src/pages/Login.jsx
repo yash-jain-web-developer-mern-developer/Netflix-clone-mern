@@ -17,6 +17,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(firebaseAuth, email, password);
     } catch (error) {
+      alert("account not found or invalid credentials")
       console.log(error.code);
     }
   };
